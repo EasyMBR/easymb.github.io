@@ -1,252 +1,131 @@
 * {
   padding: 0;
   margin: 0;
+
+  transition: all 0.3s ease-in;
 }
 
-a {
-  text-decoration: none;
+body {
+  font-family: "Raleway", sans-serif;
+
+  background-attachment: fixed;
+  background-color: #dcd7cd;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23b6a59d' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+main {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-block {
+  width: 80%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project {
+  margin: 40px 20px;
+
+  width: 275px;
+  height: 350px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #0f98a2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+}
+
+.project__title {
+  width: 100%;
+  height: 55px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #7fc4c8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project__title h2 {
+  font-size: 25px;
+  font-weight: 600;
 }
 
 button {
-  margin-bottom: 2px;
+  width: 100%;
+  height: 55px;
 
-  width: 150px;
-  height: 45px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 
-  border: 2px solid #ffffff;
-  background-color: #ffffff00;
+  border: none;
+  color: #4d4c4c;
 
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
+  text-transform: capitalize;
   font-weight: 500;
-
-  transition: all 0.2s ease-in;
 }
 
 button:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #7fc4c8;
+  color: white;
 }
 
-input {
-  border: none;
-  width: 285px;
-  height: 31px;
-  box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+/* pc sizes */
+
+@media (max-width: 1575px) {
+  .portfolio-block {
+    width: 90%;
+  }
 }
 
-input::placeholder {
-  padding: 0 0 0 15px;
+@media (max-width: 1400px) {
+  .portfolio-block {
+    width: 60%;
+  }
 }
 
-.dedicated--orange {
-  color: #ff8b38;
+@media (max-width: 1100px) {
+  .portfolio-block {
+    width: 80%;
+  }
 }
 
-/* header */
+/* tablets sizes */
 
-header {
-  width: 100%;
-  height: 70px;
+@media (max-width: 800px) {
+  .portfolio-block {
+    width: 90%;
+  }
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background-color: #000000;
-
-  font-family: "Open Sans", sans-serif;
+  .project {
+    margin: 10px 20px;
+  }
 }
 
-/* Logo style*/
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 700px) {
+  .portfolio-block {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 
-  color: #ffffff;
-}
-
-.logo h2 {
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-}
-
-.logo--dedicated {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-
-  color: #ff8b38;
-}
-
-.header__logo {
-  padding: 0 0 0 250px;
-
-  font-size: 25px;
-}
-
-.nav-bar__links {
-  width: 500px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-bar__link {
-  color: #ffffff;
-}
-
-.nav-bar__link a {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.header__nav-bar {
-  margin: 0 250px 0 0;
-}
-
-/*end header */
-
-.sitebranding {
-  width: 100%;
-  height: 720px;
-
-  background-image: url(/img/main-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  font-family: "Raleway", sans-serif;
-}
-
-.sitebranding__content {
-  margin: 0 0 0 250px;
-
-  width: 50%;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.sitebranding__logo {
-  margin: 85px 0 20px 0;
-
-  font-size: 70px;
-}
-
-.sitebranding__title {
-  margin: 0 0 80px 0;
-}
-
-.sitebranding__title h1 {
-  width: 560px;
-  color: #ffffff;
-
-  font-size: 36px;
-  font-weight: 400;
-
-  text-transform: uppercase;
-}
-
-.sitebranding__text {
-  margin: 0 0 45px 0;
-}
-
-.sitebranding__text p {
-  width: 461px;
-
-  opacity: 0.8;
-
-  color: #ffffff;
-
-  font-size: 16px;
-  font-weight: 300;
-
-  letter-spacing: 0.05em;
-  line-height: 30px;
-}
-
-.sitebranding__form {
-  margin: 0 250px 0 0;
-}
-
-.form {
-  width: 370px;
-  height: 360px;
-
-  background-color: #ffffff;
-  border-radius: 4px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.form__title {
-  width: 100%;
-  height: 54px;
-
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  background-color: #f5f5f5;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.form__title span {
-  text-transform: uppercase;
-}
-
-.form__title h2 {
-  color: #333333;
-
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-
-  text-transform: capitalize;
-}
-
-.form__input-block {
-  height: 180px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.form__button {
-  margin: 0;
-
-  width: 100%;
-  height: 54px;
-
-  border: none;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-
-  background-color: #ff8b38;
-
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-.form__button:hover {
-  background-color: #bdbdbd;
-  color: #ffffff;
+  .project {
+    margin: 10px 20px;
+  }
 }

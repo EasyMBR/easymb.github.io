@@ -1,0 +1,551 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  width: 210px;
+  height: 46px;
+
+  border: none;
+  border-radius: 23px;
+
+  color: #ffffff;
+  background-color: #f69615;
+
+  text-transform: uppercase;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #585858;
+}
+
+#header {
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scrolling-header {
+  width: 100%;
+  height: 90px;
+
+  background-color: #ffffff;
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  opacity: 0;
+
+  transition: all 0.1s ease-in;
+
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+.scrolling-header-visible {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+
+.header__logo {
+  padding: 50px 0 0 0;
+}
+
+.header__title h2 {
+  padding: 25px 0 25px 0;
+
+  color: #467495;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-bar__links {
+  width: 550px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar__link {
+  color: #585858;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease-in;
+}
+
+.nav-bar__link:hover {
+  color: #f69615;
+}
+
+.sitebranding {
+  width: 100%;
+  height: 860px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url(/Architecture/img/main-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.sitebranding__title h1 {
+  padding: 200px 0 30px 0;
+
+  color: #ffffff;
+
+  font-size: 72px;
+  letter-spacing: 0.08em;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sitebranding__text {
+  color: white;
+  font-weight: 200;
+  font-size: 24px;
+
+  text-align: center;
+}
+
+.sitebranding__text:before {
+  content: "";
+
+  display: block;
+  position: relative;
+
+  height: 2px;
+  width: 200px;
+  background: #ffffff;
+  right: 75%;
+  top: 45%;
+}
+
+.sitebranding__text::after {
+  content: "";
+
+  display: block;
+  position: relative;
+
+  height: 2px;
+  width: 200px;
+  background: #ffffff;
+  left: 125%;
+  bottom: 50%;
+}
+
+.sitebranding__button-block {
+  padding: 100px 0 0 0;
+}
+
+.about {
+  width: 100%;
+  height: 640px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Roboto";
+}
+
+.title h2 {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 56px;
+
+  text-transform: uppercase;
+
+  color: #467495;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+
+  text-align: center;
+
+  color: #5b5b5b;
+}
+
+.about__title {
+  padding: 75px 0 25px 0;
+}
+
+.about__text p {
+  width: 740px;
+}
+
+.about__skills-block {
+  padding: 75px 0;
+
+  width: 65%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 275px;
+  height: 275px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transition: all 0.2s ease-in;
+}
+
+.skill__title h3 {
+  font-size: 40px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.comfort {
+  background-image: url(/Architecture/img/Comfort.jpg);
+}
+
+.reliability {
+  background-image: url(/Architecture/img/Reliability.jpg);
+}
+
+.design {
+  background-image: url(/Architecture/img/Design.jpg);
+}
+
+.portfolio {
+  width: 100%;
+  height: 600px;
+
+  background-color: #f2f2f2;
+}
+
+.portfolio {
+  width: 100%;
+  height: 640px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Roboto";
+}
+
+.portfolio__title {
+  padding: 75px 0 25px 0;
+}
+
+.portfolio__text p {
+  width: 740px;
+}
+
+.portfolio__projects-block {
+  padding: 75px 0 0 0;
+
+  width: 65%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project {
+  width: 300px;
+  height: 225px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-color: #467495;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.project__content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+
+  transition: all 0.16s ease-in;
+}
+
+.project__buttons {
+  width: 125px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project:hover .project__content {
+  background-color: #00000090;
+  opacity: 1;
+}
+
+.project-one {
+  background-image: url(/Architecture/img/Project-1.jpg);
+}
+
+.project-two {
+  background-image: url(/Architecture/img/Project-2.jpg);
+}
+
+.project-three {
+  background-image: url(/Architecture/img/Project-3.jpg);
+}
+
+.reviews {
+  width: 100%;
+  height: 560px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Roboto";
+}
+
+.reviews__title {
+  padding: 75px 0 30px 0;
+}
+
+.client-block {
+  width: 930px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-block__quote p {
+  padding: 20px 0 30px 0;
+
+  font-style: italic;
+  font-weight: 300;
+  font-size: 22px;
+
+  text-align: center;
+  line-height: 26px;
+
+  color: #5b5b5b;
+}
+
+.client-block__name h3 {
+  padding: 20px 0;
+
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 49px;
+
+  color: #585858;
+
+  position: relative;
+}
+
+.client-block__name:before {
+  content: "";
+
+  display: block;
+  position: relative;
+
+  height: 4px;
+  width: 75px;
+  background: #f69615;
+  right: 55%;
+  top: 50%;
+}
+
+.client-block__name:after {
+  content: "";
+
+  display: block;
+  position: relative;
+
+  height: 4px;
+  width: 75px;
+  background: #f69615;
+  left: 110%;
+  bottom: 45%;
+}
+
+.contact {
+  width: 100%;
+  height: 380px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url(/Architecture/img/contacts-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.contact__title h2 {
+  padding: 75px 0 25px 0;
+
+  color: #ffffff;
+}
+
+.contact__text p {
+  padding: 0 0 25px 0;
+
+  color: #ffffff;
+}
+
+.contact__form {
+  padding: 80px 0 0 0;
+
+  width: 65%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  padding: 0 10px;
+
+  width: 200px;
+  height: 40px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+/* placeholder anim */
+
+input::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+input::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+input:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+input:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+  text-indent: 200px;
+  transition: text-indent 0.3s ease;
+}
+input:focus::-moz-placeholder {
+  text-indent: 200px;
+  transition: text-indent 0.3s ease;
+}
+input:focus:-moz-placeholder {
+  text-indent: 200px;
+  transition: text-indent 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+  text-indent: 200px;
+  transition: text-indent 0.3s ease;
+}
+
+.contact__form button {
+  width: 202px;
+  height: 42px;
+
+  border-radius: 4px;
+}
+
+.up-button{
+  position: fixed;
+
+  right: 50px;
+  bottom: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__nav-bar {
+  padding: 45px 0 25px 0;
+}
+
+.footer__links {
+  width: 125px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__links {
+  transition: all 0.2s ease-in;
+}
+
+.footer-link:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in;
+}
