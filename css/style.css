@@ -120,6 +120,10 @@ button:hover {
 }
 
 @media (max-width: 700px) {
+  .main {
+    height: 1200px;
+  }
+
   .portfolio-block {
     flex-wrap: nowrap;
     flex-direction: column;
