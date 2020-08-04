@@ -17,23 +17,45 @@
 <body>
 
   <div class="scrolling-header">
+    <div class="scrolling-header__container">
+      <div class="scrolling-header__nav-bar nav-bar">
+        <div class="nav-bar__links">
+          <a href="#" class="nav-bar__link">home</a>
+          <a href="#" class="nav-bar__link">projects</a>
+          <a href="#" class="nav-bar__link">contacts</a>
+          <a href="#" class="nav-bar__link">services</a>
+          <a href="#" class="nav-bar__link">about</a>
+          <a href="#" class="nav-bar__link">blog</a>
+        </div>
+      </div>
 
-    <div class="scrolling-header__nav-bar nav-bar">
-      <div class="nav-bar__links">
-        <a href="#" class="nav-bar__link">home</a>
-        <a href="#" class="nav-bar__link">projects</a>
-        <a href="#" class="nav-bar__link">contacts</a>
-        <a href="#" class="nav-bar__link">services</a>
-        <a href="#" class="nav-bar__link">about</a>
-        <a href="#" class="nav-bar__link">blog</a>
+      <div class="header__burger burger">
+        <input type="checkbox" id="burger-checkbox"/>
+        <span class="top-stick"></span>
+        <span class="middle-stick"></span>
+        <span class="bottom-stick"></span>
+
+        <div class="burger-nav">
+          <div class="burger-nav__container">
+            <div class="burger-nav__title">
+              <h3>Menu</h3>
+            </div>
+            <div class="burger-nav__links burger-nav--active">
+              <a href="" class="burger-nav__link">Features</a>
+              <a href="" class="burger-nav__link">About</a>
+              <a href="" class="burger-nav__link">Pricing</a>
+              <a href="" class="burger-nav__link">Reviews</a>
+              <a href="" class="burger-nav__link">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="up-button">
+        <a href="javascript: void(0);" data-item="header"><img src="/Architecture/img/up-button.svg" alt="to top"></a>
       </div>
     </div>
-
-    <div class="up-button">
-      <a href="javascript: void(0);" data-item="header"><img src="/Architecture/img/up-button.svg" alt="to top"></a>
-    </div>
   </div>
-
 
 
   <header id="header">
@@ -53,6 +75,28 @@
           <a href="#" class="nav-bar__link">services</a>
           <a href="#" class="nav-bar__link">about</a>
           <a href="#" class="nav-bar__link">blog</a>
+        </div>
+      </div>
+
+      <div class="header__burger burger">
+        <input type="checkbox" />
+        <span class="top-stick"></span>
+        <span class="middle-stick"></span>
+        <span class="bottom-stick"></span>
+
+        <div class="burger-nav">
+          <div class="burger-nav__container">
+            <div class="burger-nav__title">
+              <h3>Menu</h3>
+            </div>
+            <div class="burger-nav__links burger-nav--active">
+              <a href="" class="burger-nav__link">Features</a>
+              <a href="" class="burger-nav__link">About</a>
+              <a href="" class="burger-nav__link">Pricing</a>
+              <a href="" class="burger-nav__link">Reviews</a>
+              <a href="" class="burger-nav__link">Contact</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -88,27 +132,27 @@
         </div>
 
         <div class="about__skills-block">
-          <div class="about__skill skill comfort">
+          <a href="#" class="about__skill skill comfort">
             <div class="skill__content">
               <div class="skill__title">
                 <h3>comfort</h3>
               </div>
             </div>
-          </div>
-          <div class="about__skill skill reliability">
+          </a>
+          <a href="#" class="about__skill skill reliability">
             <div class="skill__content">
               <div class="skill__title">
                 <h3>reliability</h3>
               </div>
             </div>
-          </div>
-          <div class="about__skill skill design">
+          </a>
+          <a href="#" class="about__skill skill design">
             <div class="skill__content">
               <div class="skill__title">
                 <h3>design</h3>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
