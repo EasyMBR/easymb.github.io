@@ -31,15 +31,6 @@ button:hover {
   color: #585858;
 }
 
-#header {
-  width: 100%;
-  height: 300px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .scrolling-header {
   width: 100%;
   height: 90px;
@@ -63,6 +54,24 @@ button:hover {
 .scrolling-header-visible {
   opacity: 1;
   transition: all 0.2s ease-in;
+}
+
+#header {
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__container {
+  width: 75%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header__logo {
@@ -112,14 +121,23 @@ button:hover {
   height: 860px;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   background-image: url(/Architecture/img/main-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
   font-family: "Roboto", sans-serif;
+}
+
+.sitebranding__container {
+  width: 75%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sitebranding__title h1 {
@@ -177,10 +195,19 @@ button:hover {
   height: 640px;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   font-family: "Roboto";
+}
+
+.about__container {
+  width: 75%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title h2 {
@@ -216,7 +243,7 @@ button:hover {
 .about__skills-block {
   padding: 75px 0;
 
-  width: 65%;
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -272,10 +299,19 @@ button:hover {
   height: 640px;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   font-family: "Roboto";
+}
+
+.portfolio__container {
+  width: 75%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portfolio__title {
@@ -289,7 +325,7 @@ button:hover {
 .portfolio__projects-block {
   padding: 75px 0 0 0;
 
-  width: 65%;
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -355,10 +391,19 @@ button:hover {
   height: 560px;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   font-family: "Roboto";
+}
+
+.reviews__container {
+  width: 75%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .reviews__title {
@@ -366,7 +411,7 @@ button:hover {
 }
 
 .client-block {
-  width: 930px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -429,14 +474,23 @@ button:hover {
   height: 380px;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   background-image: url(/Architecture/img/contacts-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
   font-family: "Roboto", sans-serif;
+}
+
+.contact__container {
+  width: 75%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact__title h2 {
@@ -454,7 +508,7 @@ button:hover {
 .contact__form {
   padding: 80px 0 0 0;
 
-  width: 65%;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
@@ -513,7 +567,7 @@ input:focus:-ms-input-placeholder {
   border-radius: 4px;
 }
 
-.up-button{
+.up-button {
   position: fixed;
 
   right: 50px;
@@ -523,6 +577,15 @@ input:focus:-ms-input-placeholder {
 footer {
   width: 100%;
   height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__container {
+  width: 75%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -548,4 +611,32 @@ footer {
 .footer-link:hover {
   transform: scale(1.05);
   transition: all 0.2s ease-in;
+}
+
+/* ---- media ---- */
+
+@media (max-width: 1280px) {
+  .header__container,
+  .sitebranding__container,
+  .about__container,
+  .portfolio__container,
+  .reviews__container,
+  .contact__container,
+  .footer__container {
+    width: 85%;
+  }
+
+  .project{
+    width: 275px;
+    height: 200px;
+  }
+
+  input {
+    width: 175px;
+    
+  }
+}
+
+@media (max-width: 1024px) {
+
 }
