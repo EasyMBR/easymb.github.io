@@ -3,16 +3,27 @@
 var $header = $(".scrolling-header");
 var $burger = $(".burger-nav");
 
-var scroll = 300;
+$burger.css({
+  top: "300px",
+  height: "calc(100% - 300px)",
+});
 
+var scroll = 300;
 var active = "scrolling-header--visible";
+
 $(window).scroll(function () {
+  let x = 300 - window.pageYOffset;
+
   if ($(window).scrollTop() > scroll) {
     $header.addClass(active);
     $burger.addClass("burger--scrolled");
   } else {
     $header.removeClass(active);
     $burger.removeClass("burger--scrolled");
+    $burger.css({
+      top: x + "px",
+      height: "calc(100% - " + x + "px)",
+    });
   }
 });
 

@@ -188,17 +188,18 @@ button:hover {
 
 .burger-nav {
   width: 100%;
-  height: calc(100% - 300px);
+  height: 100%;
 
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
 
   position: fixed;
-  top: 300px;
+
   right: 0%;
 
   opacity: 0;
+  pointer-events: none;
 
   background-color: rgba(0, 0, 0, 0.4);
 
@@ -263,6 +264,7 @@ button:hover {
 
 .burger input:checked ~ .burger-nav {
   opacity: 1;
+  pointer-events: all;
 }
 
 /* -- end burger -- */
@@ -275,7 +277,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 
-  background-image: url(/Architecture/img/main-bg.jpg);
+  background-image: url(/Architecture/img/main-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -431,15 +433,15 @@ button:hover {
 }
 
 .comfort {
-  background-image: url(/Architecture/img/Comfort.jpg);
+  background-image: url(/Architecture/img/Comfort.webp);
 }
 
 .reliability {
-  background-image: url(/Architecture/img/Reliability.jpg);
+  background-image: url(/Architecture/img/Reliability.webp);
 }
 
 .design {
-  background-image: url(/Architecture/img/Design.jpg);
+  background-image: url(/Architecture/img/Design.webp);
 }
 
 .portfolio {
@@ -532,15 +534,15 @@ button:hover {
 }
 
 .project-one {
-  background-image: url(/Architecture/img/Project-1.jpg);
+  background-image: url(/Architecture/img/Project-1.webp);
 }
 
 .project-two {
-  background-image: url(/Architecture/img/Project-2.jpg);
+  background-image: url(/Architecture/img/Project-2.webp);
 }
 
 .project-three {
-  background-image: url(/Architecture/img/Project-3.jpg);
+  background-image: url(/Architecture/img/Project-3.webp);
 }
 
 .reviews {
@@ -636,7 +638,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 
-  background-image: url(/Architecture/img/contacts-bg.jpg);
+  background-image: url(/Architecture/img/contacts-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -925,7 +927,7 @@ footer {
     justify-content: center;
   }
 
-  .up-button{
+  .up-button {
     bottom: 10px;
     right: 15px;
   }
@@ -946,7 +948,7 @@ footer {
     display: none;
   }
 
-  .burger-nav__container{
+  .burger-nav__container {
     width: 50%;
   }
 }
@@ -976,7 +978,7 @@ footer {
     display: none;
   }
 
-  .contact{
+  .contact {
     height: 670px;
   }
 }
