@@ -49,6 +49,8 @@ button:hover {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
   box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+
+  pointer-events: none;
 }
 
 .scrolling-header__container {
@@ -62,6 +64,8 @@ button:hover {
 
 .scrolling-header--visible {
   opacity: 1;
+  pointer-events: all;
+  
   transition: all 0.2s ease-in;
 }
 

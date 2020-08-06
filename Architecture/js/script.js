@@ -8,7 +8,7 @@ $burger.css({
   height: "calc(100% - 300px)",
 });
 
-var scroll = 300;
+var scroll = 300;``
 var active = "scrolling-header--visible";
 
 $(window).scroll(function () {
@@ -17,6 +17,10 @@ $(window).scroll(function () {
   if ($(window).scrollTop() > scroll) {
     $header.addClass(active);
     $burger.addClass("burger--scrolled");
+    $burger.css({
+      top: "90px",
+      height: "calc(100% - 90px)",
+    });
   } else {
     $header.removeClass(active);
     $burger.removeClass("burger--scrolled");
